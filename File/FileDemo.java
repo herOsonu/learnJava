@@ -1,6 +1,8 @@
 package File;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.text.SimpleDateFormat;
 
 public class FileDemo {
@@ -63,6 +65,30 @@ public class FileDemo {
             File file2=new File("d:"+File.separator);
             MyMath.listDir(file2);
         },"列出线程").start();
+        System.out.println("*******************************************");
+        try {
+            FileDirectory.directory(new File("d:"+File.separator));
+            System.out.println("success!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        /*
+        * RandomAccessFile,java文件模型在硬盘上的文件是byte存储的，文件指针打开文件时pointer=0，写方法raf.write（int）只写一个字节
+        * */
+
+       File file2=new File("d:"+File.separator+"Demo.txt");
+        try {
+            if(!file2.exists()){
+                file2.createNewFile();
+            }
+            RandomAccessFile raf=new RandomAccessFile(file2,"rw");
+            System.out.println(raf.getFilePointer());
+            raf.write('A');//只写一个字节？
+            System.out.println(raf.getFilePointer());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
 class MyMath{
