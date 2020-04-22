@@ -3,6 +3,8 @@ package MapTest;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
+//Collection特点是一次性进行单个对象的保存，Map中一次性保存2个，关系为key到value，能通过key找到value
+//Collection以输出为主,Map以查找为主，HashMap最常用
 public class MapTest {
     public static void main(String[] args) {
         //map输出数据的形式与Collection比较出现频率不高，但仍需要熟练使用学会此标准步骤，代码必须掌握

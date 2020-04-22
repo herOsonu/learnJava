@@ -2,13 +2,15 @@ package SetTest;
 
 import java.util.*;
 
+//无序不重复,没有对Collection扩充（List扩充了get方法）,两个子类（HashSet、TreeSet）
 public class SetTest {
     public static void main(String[] args) {
-        List<String> all=new ArrayList<>();
-        all.add("zhangsan");
-        Iterator<String> iter=all.iterator();
-        while (iter.hasNext()){
-            String str=iter.next();
+        Set<Person> set=new HashSet<Person>();
+        set.add(new Person("zhangsan",18));
+        set.add(new Person("lisi",15));
+        Iterator<Person> iterator=set.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
         }
 
     }

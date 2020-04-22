@@ -1,9 +1,13 @@
 package ListTest;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 
+//有序可重复，集合保存最多的是简单java类
+//vector是旧的子类，jdk1.2加入，异步处理性能高，非线程安全
+//LinkedList是纯粹的链表实现，封装的是链表O（n）为n,ArrayListO(n)为1
 public class TestDemo {
     public static void main(String[] args) {
         List<Person> all=new Vector<>();
@@ -13,6 +17,13 @@ public class TestDemo {
         all.add(new Person("赵柳",18));
         for(int i=0;i<all.size();i++){
             System.out.println(all.get(i));
+        }
+
+        List<String> allArrayList=new ArrayList<>();
+        allArrayList.add("zhangsan");
+        Iterator<String> iter=allArrayList.iterator();
+        while (iter.hasNext()) {
+            String str = iter.next();
         }
 
     }
