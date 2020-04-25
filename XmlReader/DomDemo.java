@@ -1,25 +1,35 @@
 package XmlReader;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import java.io.File;
 import java.io.IOException;
 
 public class DomDemo {
-    public static void parseDemo() {
-        //1.创建一个DocumentBuilderFactory对象
+    public static DocumentBuilder getDocumentBuilder(){
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-        //2.创建一个DocumentBuilder对象
+        DocumentBuilder db =null;
         try {
-            DocumentBuilder db = dbf.newDocumentBuilder();
+            db=dbf.newDocumentBuilder();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+        return db;
+    }
+    public static void parseDemo() {
+        try {
             //3.通过DocumentBuilder对象的parse方法加载books.xml文件到当前项目下
-            Document document = db.parse("books.xml");
+            Document document =getDocumentBuilder().parse("books.xml");
             //获取所用book节点的的集合
             NodeList bookList = document.getElementsByTagName("book");
             //遍历每一个book节点
@@ -50,15 +60,35 @@ public class DomDemo {
 
                 }
             }
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
         } catch (SAXException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-
-
         }
+    }
+    public void createXML(){
+        DocumentBuilder db=getDocumentBuilder();
+        Document document=db.newDocument();
+        document.setXmlStandalone(true);//表头standalone为yes且不显示
+        Element bookstore=document.createElement("bookstore");
+        Element book=document.createElement("book");
+        Element name=document.createElement("name");
+        name.setTextContent("吉姆雷诺");
+        book.appendChild(name);
+        book.setAttribute("id","1");
+        bookstore.appendChild(book);
+        document.appendChild(bookstore);
+        TransformerFactory tff=TransformerFactory.newDefaultInstance();
+
+        try {
+            Transformer tf=tff.newTransformer();
+            tf.setOutputProperty(OutputKeys.INDENT,"yes");
+            tf.transform(new DOMSource(document),new StreamResult(new File("books1.xml")));
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
 
