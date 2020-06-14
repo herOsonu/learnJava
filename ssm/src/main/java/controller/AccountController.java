@@ -30,7 +30,7 @@ public class AccountController {
             session.setAttribute("username",username);
             return "success";
         }else{
-            model.addAttribute("error","账号或密码错误");
+            /*model.addAttribute("error","账号或密码错误");*/
             return "error";
         }
     }
