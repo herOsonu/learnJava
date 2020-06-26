@@ -3,8 +3,6 @@ package XmlReader;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 

@@ -6,7 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f01022-12a7-47f2-ae8e-0afed32e320b" name="Default Changelist" comment="" />
+    <list default="true" id="76f01022-12a7-47f2-ae8e-0afed32e320b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ssm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../XmlReader/SaxParseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../XmlReader/SaxParseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learnJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../learnJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/learnJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/learnJava/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/learnJava/XmlReader/SaxParseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/learnJava/XmlReader/SaxParseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/learnJava/learnJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/learnJava/learnJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/css/login.style.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +48,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -50,8 +65,14 @@
         <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1d5JpRq6ABeLCtKKmtMim9N8uNp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -60,22 +81,26 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/css" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.298" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\ssm\src\main\resources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\learnJava\ssm\src\main\webapp\WEB-INF" />
       <recent name="D:\ssm\src\main\webapp\WEB-INF" />
       <recent name="D:\ssm\src\main\webapp\WEB-INF\images" />
       <recent name="D:\ssm\src\main\webapp\WEB-INF\css" />
       <recent name="D:\ssm\src\main\webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learnJava\ssm\src\main\webapp\WEB-INF\css" />
+      <recent name="D:\ssm\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.35">
@@ -215,6 +240,10 @@
       <workItem from="1591749314229" duration="20434000" />
       <workItem from="1592057558158" duration="398000" />
       <workItem from="1592091361118" duration="1633000" />
+      <workItem from="1592094618038" duration="615000" />
+      <workItem from="1592096738214" duration="1081000" />
+      <workItem from="1592300637994" duration="3075000" />
+      <workItem from="1592322485884" duration="31000" />
     </task>
     <servers />
   </component>
@@ -296,10 +325,14 @@
     </state>
     <state width="1293" height="314" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591750663200" />
     <state width="1293" height="444" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591803748600" />
-    <state x="2360" y="94" key="SettingsEditor" timestamp="1591796773324">
+    <state x="2360" y="94" key="SettingsEditor" timestamp="1592096833068">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1591796773324" />
+    <state x="2360" y="94" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592096833068" />
+    <state x="2254" y="214" key="new project wizard" timestamp="1592314136467">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2254" y="214" key="new project wizard/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592314136467" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1591752070886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
